@@ -1,0 +1,54 @@
+/*** Tighten up drop-down/context/popup menu spacing (8 Sep 2021) ***/
+
+menupopup:not(.in-menulist)>menuitem,
+menupopup:not(.in-menulist)>menu {
+  padding-block: 3px !important;
+  /* reduce to 3px, 2px, 1px or 0px as needed */
+  min-height: unset !important;
+  /* v92.0 - for padding below 4px */
+}
+
+:root {
+  --arrowpanel-menuitem-padding: 4px 8px !important;
+}
+
+/* ============================================================== */
+
+/* hide tabs toolbar  */
+#TabsToolbar {
+  visibility: collapse;
+}
+
+/* hide tabs in toolbar */
+#main-window:not([tabsintitlebar="true"]) #TabsToolbar {
+  visibility: collapse !important;
+}
+
+/* ============================================================== */
+/* Context menu Edit   */
+
+/*** When right-clicking on a link ***/
+#context-openlinkinusercontext-menu,
+#context-bookmarklink,
+#context-savelink,
+#context-savelinktopocket,
+#context-copylink {
+  display: none !important
+}
+
+/*** When right-clicking on a blank area on a webpage ***/
+#context-navigation,
+#context-savepage,
+#context-pocket,
+#screenshots_mozilla_org_create-screenshot,
+#context-take-screenshot,
+#context-sep-navigation {
+  display: none !important
+}
+
+/*** When right-clicking on an image ***/
+#context-sendimage,
+#context-setDesktopBackground,
+#context-sep-sharing {
+  display: none !important
+}
