@@ -25,9 +25,7 @@ https://www.reddit.com/r/firefox/comments/7dvtw0/guide_how_to_edit_your_context_
 
 6. Load `about:config` into addressbar. Search for `toolkit.legacyUserProfileCustomizations.stylesheets` and make sure the value is `true`.
 
-
-
-===================================================================================================================================
+=================================================================
 
 ## Hide Pocket / Sync / Screenshots
 If you don't use either of those "internal addons" at all, you can just disable them, which will also remove their context menu entries everywhere.
